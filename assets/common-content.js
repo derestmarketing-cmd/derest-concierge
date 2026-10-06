@@ -112,7 +112,7 @@ const DERST_EXPLORE_CATEGORIES = [
 
 const DERST_GETTING_AROUND = {
   cabs: { name: "GoaMiles", desc: "Download GoaMiles for getting around Goa — book local rides and other transport.", url: "https://www.goamiles.com/" },
-  rental: "Want to explore Goa on your own? Our caretaker can help arrange a scooter or car rental.",
+  rental: "Want to explore Goa on your own? We can help arrange a scooter or car rental.",
 };
 
 const DERST_USEFUL_PLACES = [
@@ -260,7 +260,8 @@ function renderShared(){
       <div class="info-block">
         <h4>🚖 Cabs — ${DERST_GETTING_AROUND.cabs.name}</h4>
         <p>${DERST_GETTING_AROUND.cabs.desc}</p>
-        <a href="${DERST_GETTING_AROUND.cabs.url}" target="_blank" rel="noopener" style="font-size:13px; color:var(--forest-600);">Open GoaMiles →</a>
+        <a href="${DERST_GETTING_AROUND.cabs.url}" target="_blank" rel="noopener" style="font-size:13px; color:var(--forest-600);">Open GoaMiles →</a><br>
+        <a href="tel:+${DERST_CONTACT.hostCall}" style="font-size:13px; color:var(--forest-600);">Or call +91 93701 92454 →</a>
       </div>
       <div class="info-block">
         <h4>🛵 Vehicle Rental</h4>
