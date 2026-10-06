@@ -143,10 +143,11 @@ const DERST_CHECKOUT = [
 
 const DERST_CONTACT = {
   hostName: "Harshanki (Host)",
-  hostWhatsApp: "918849565903",       // digits only, country code first, no + or spaces
-  caretakerName: "Property Caretaker",
-  caretakerCall: "919284785662",      // call first
-  caretakerWhatsApp: "917066658395",  // whatsapp second
+  hostCall: "919370192454",           // host — call
+  hostWhatsApp: "918849565903",       // host — WhatsApp only
+  caretakerName: "Akash",
+  caretakerCall: "918310289331",      // caretaker — call
+  caretakerWhatsApp: "918310289331",  // caretaker — WhatsApp (same number)
 };
 
 /* ---------- helpers ---------- */
@@ -264,7 +265,7 @@ function renderShared(){
       <div class="info-block">
         <h4>🛵 Vehicle Rental</h4>
         <p>${DERST_GETTING_AROUND.rental}</p>
-        <a href="https://wa.me/${DERST_CONTACT.caretakerWhatsApp}" target="_blank" rel="noopener" style="font-size:13px; color:var(--forest-600);">Contact caretaker →</a>
+        <a href="tel:+${DERST_CONTACT.hostCall}" style="font-size:13px; color:var(--forest-600);">Call +91 93701 92454 →</a>
       </div>
     `;
   }
@@ -320,8 +321,12 @@ function renderShared(){
           <span>WhatsApp Caretaker<span class="who">${DERST_CONTACT.caretakerName}</span></span>
           <span class="arrow">↗</span>
         </a>
+        <a class="wa-button secondary" href="tel:+${DERST_CONTACT.hostCall}">
+          <span>Call your host<span class="who">${DERST_CONTACT.hostName}</span></span>
+          <span class="arrow">↗</span>
+        </a>
         <a class="wa-button secondary" target="_blank" rel="noopener" href="https://wa.me/${DERST_CONTACT.hostWhatsApp}">
-          <span>Message your host<span class="who">${DERST_CONTACT.hostName} · WhatsApp</span></span>
+          <span>Message your host<span class="who">${DERST_CONTACT.hostName} · WhatsApp only</span></span>
           <span class="arrow">↗</span>
         </a>
       </div>
